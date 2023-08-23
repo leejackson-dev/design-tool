@@ -1,0 +1,140 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.logo-banner {
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 20px;
+  user-select: none;
+}
+
+.controls {
+  width: 100vw;
+  height: 50px;
+  padding-top: 60px;
+  margin-bottom: -85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor {
+  position: absolute;
+  margin-top: -22px;
+  margin-left: -1px;
+  width: 765px;
+  height: 620px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffbf00;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.laptop-screen {
+  width: 765px;
+  height: 620px;
+  background-color: #ffffff;
+  position: relative;
+  top: 4px;
+  left: 15px;
+  border: 2px solid rgb(217, 217, 217);
+}
+
+.laptop-frame {
+  height: 652px;
+  width: 800px;
+  position: relative;
+  left: 50px;
+  border-radius: 16px 16px 4px 4px;
+  background-color: rgb(237, 237, 237);
+  border-top: 2px solid rgb(217, 217, 217);
+  border-left: 2px solid rgb(217, 217, 217);
+  border-right: 2px solid rgb(217, 217, 217);
+}
+
+.laptop-frame::before {
+  content: '';
+  position: relative;
+  left: 390px;
+  top: 2px;
+  display: block;
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(217, 217, 217);
+}
+
+.laptop-bottom {
+  height: 20px;
+  width: 900px;
+  border-radius: 4px 4px 16px 16px;
+  background-color: rgb(237, 237, 237);
+  border: 2px solid rgb(217, 217, 217);
+}
+
+.laptop-bottom::before {
+  content: '';
+  position: relative;
+  top: 21px;
+  left: 80%;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: rgb(217, 217, 217);
+}
+
+.laptop-bottom::after {
+  content: '';
+  position: relative;
+  top: -3px;
+  left: 10%;
+  display: block;
+  margin-top: 21px;
+  width: 80px;
+  height: 3px;
+  background-color: rgb(217, 217, 217);
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:disabled {
+  background-color: #eeeeee;
+  color: #dddddd;
+}
